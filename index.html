@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TryArti">
+
+    <title>TryArti</title>
+
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="/">
+                    <img width="59" height="34" src="image/Logo.svg" alt="Arti logotype">
+                </a>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="benefits.html" class="header__menu-link">Benefits</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="features.html" class="header__menu-link">Features</a>
+                    </li>
+                    <li class="header__menu-item header__menu-item--dropdown">
+                        <a href="/" class="header__menu-link header__menu-link-arrow">Company</a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item">
+                                <a href="/" class="header__submenu-link">Our Team</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="careers.html" class="header__submenu-link">Careers</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="/" class="header__submenu-link">Partners</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__auth">
+                <button class="header__button--login button-transparent" id="openModalLogin">Login</button>
+                <button class="header__button--register button-green" id="openModalRegister">Get Started</button>
+            </div>
+
+            <div class="header__mobile-actions">
+                <button class="header__button--authorization" id="openModalAuthorization">
+                    <img width="32" height="32" src="image/carbon_user-avatar.svg" alt="icon authorization">
+                </button>
+            </div>
+
+            <div class="header__burger">
+                <span class="header__burger-lines"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        In the business of helping <span class="hero__highlight">your business</span>.
+                    </h1>
+                    <p class="hero__description">
+                        Run more efficiently. Understand your costs. Apply best practices to your industry. Set your own
+                        goals and pass the competition.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#" class="hero__button hero__button--primary">Try It Out</a>
+                        <a href="#" class="hero__button hero__button--secondary">Download The App</a>
+                    </div>
+                </div>
+
+                <div class="hero__images">
+                    <picture>
+                        <source srcset="image/hero-img.webp" type="image/webp">
+                        <img width="560" height="544" src="image/hero-img.png" alt="hero image">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="hero__brands">
+                <p class="hero__brands-text">Trusted by thousand companies in the world</p>
+                <div class="hero__brands-logos">
+                    <img width="141" height="40" src="image/hero__brands-logo1.svg" alt="Mailchimp"
+                        class="hero__brand-logo">
+                    <img width="129" height="40" src="image/hero__brands-logo2.svg" alt="Airtable"
+                        class="hero__brand-logo">
+                    <img width="124" height="40" src="image/hero__brands-logo3.svg" alt="Gumroad"
+                        class="hero__brand-logo">
+                    <img width="107" height="40" src="image/hero__brands-logo4.svg" alt="Notion"
+                        class="hero__brand-logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- A Small Business Coach -->
+        <section class="business-coach">
+            <div class="business-coach__container">
+                <div class="business-coach__header">
+                    <span class="business-coach__button">How We Do It</span>
+                    <h2 class="business-coach__title">
+                        A Small Business Coach <span class="business-coach__highlight">In Your Pocket</span>.
+                    </h2>
+                    <p class="business-coach__description">
+                        At Arti our passion is your business. Check out just a few of the business enablement tools we
+                        offer to businesses for free.
+                    </p>
+                </div>
+
+                <div class="business-coach__content">
+                    <div class="business-coach__row">
+                        <div class="business-coach__card">
+                            <div class="business-coach__card-img">
+                                <picture>
+                                    <source srcset="image/business-coach__card-img1.webp" type="image/webp">
+                                    <img width="369" height="231" src="image/business-coach__card-img1.png"
+                                        alt="Raise Capital" loading="lazy">
+                                </picture>
+
+                                <div class="business-coach__card-img-bg">
+                                    <picture>
+                                        <source srcset="image/business-coach__card-bg.webp" type="image/webp">
+                                        <img width="210" height="300" src="image/business-coach__card-bg.png"
+                                            alt="imgages" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="business-coach__card-content">
+                                <h3 class="business-coach__subtitle">Raise Capital</h3>
+                                <p class="business-coach__text">
+                                    Get real time opportunity insights on how capital could grow your business.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="business-coach__card">
+                            <div class="business-coach__card-img">
+                                <picture>
+                                    <source srcset="image/business-coach__card-img2.webp" type="image/webp">
+                                    <img width="497" height="180" src="image/business-coach__card-img2.png"
+                                        alt="Expense Management" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="business-coach__card-content">
+                                <h3 class="business-coach__subtitle">Expense Management</h3>
+                                <p class="business-coach__text">
+                                    Arti can automatically categorize and get notified of opportunities for savings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="business-coach__row">
+                        <div class="business-coach__card business-coach__card-smoll">
+                            <div class="business-coach__card-icon">
+                                <img width="32" height="33" src="image/business-coach__card-icon1.svg"
+                                    alt="Credit Monitoring icon">
+                            </div>
+                            <h3 class="business-coach__subtitle">Credit Monitoring</h3>
+                            <p class="business-coach__text">
+                                A good business credit report and score are essential for getting the money you need to
+                                successfully run and grow your business. A good business credit score can save you money
+                                with lower interest rates.
+                            </p>
+                        </div>
+
+                        <div class="business-coach__card business-coach__card-smoll">
+                            <div class="business-coach__card-icon">
+                                <img width="33" height="33" src="image/business-coach__card-icon2.svg"
+                                    alt="Industry Benchmarking icon">
+                            </div>
+                            <h3 class="business-coach__subtitle">Industry Benchmarking</h3>
+                            <p class="business-coach__text">
+                                Submit a single application and gain access to a revolving line of credit up to
+                                $250,000. Experience streamlined financing tailored to your needs.
+                            </p>
+                        </div>
+
+                        <div class="business-coach__card business-coach__card-smoll">
+                            <div class="business-coach__card-icon">
+                                <img width="33" height="33" src="image/business-coach__card-icon3.svg"
+                                    alt="Social Reputation Mgmt icon">
+                            </div>
+                            <h3 class="business-coach__subtitle">Social Reputation Mgmt</h3>
+                            <p class="business-coach__text">
+                                This short-term, specific loan handles your equipment repair, replacement, or purchase.
+                                We’ll help keep you moving without the headache of running numbers 1 more time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- This Is How We Do It -->
+        <section class="how-we-do-it">
+            <div class="how-we-do-it__container">
+                <div class="how-we-do-it__content">
+                    <h2 class="how-we-do-it__title">This Is How We Do It</h2>
+                    <p class="how-we-do-it__description">
+                        Understanding your business financials. We benchmark your business with over a 100 million data
+                        points. Voila! We give you actionable insights crafted to help you drive a change in behavior.
+                    </p>
+                    <a href="#" class="how-we-do-it__link">Learn More
+                        <img width="24" height="24" src="image/black-arrow.svg" alt="icon arrow">
+                    </a>
+                </div>
+                <div class="how-we-do-it__graphic">
+                    <picture>
+                        <source srcset="image/how-we-do-it.webp" type="image/webp">
+                        <img width="513" height="450" src="image/how-we-do-it.png" alt="This Is How We Do It image"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success In A Nanosecond -->
+        <section class="success-nanosecond">
+            <div class="success-nanosecond__container">
+                <div class="success-nanosecond__image">
+                    <picture>
+                        <source srcset="image/success-nanosecond.webp" type="image/webp">
+                        <img width="369" height="405" src="image/success-nanosecond.png"
+                            alt="Success In A Nanosecond image" loading="lazy">
+                    </picture>
+                </div>
+                <div class="success-nanosecond__content">
+                    <span class="business-coach__button">Intelligence</span>
+                    <h2 class="business-coach__title">
+                        Success In A Nanosecond.
+                    </h2>
+                    <p class="business-coach__description">
+                        Within seconds of signing up with Arti, we can find ways to increase cashflow, comparative
+                        analysis and create key performance indicators to help you track progress.
+                    </p>
+                    <a href="#" class="how-we-do-it__link">Learn More
+                        <img width="24" height="24" src="image/black-arrow.svg" alt="icon arrow">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section -->
+        <div class="features-section">
+            <div class="features-section__container">
+                <div class="features-section__box">
+                    <div class="features-section__col">
+                        <div class="features-section__item">
+                            <div class="features-section__item-img">
+                                <span class="features-section__item-box">
+                                    <img width="25" height="25" src="image/features-section__icon1.svg" alt="icon">
+                                </span>
+                            </div>
+                            <h3 class="features-section__item-title">Top Loan Suggestions</h3>
+                            <p class="features-section__item-description">Seamlessly manage and expand your business in one
+                                place.</p>
+                        </div>
+    
+                        <div class="features-section__item">
+                            <div class="features-section__item-img">
+                                <span class="features-section__item-box">
+                                    <img width="25" height="25" src="image/features-section__icon2.svg" alt="icon">
+                                </span>
+                            </div>
+                            <h3 class="features-section__item-title">Let Arti Take The Wheel</h3>
+                            <p class="features-section__item-description">Conversational Chat GPT text goes here that
+                                explains what this is.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-section__col">
+                        <div class="features-section__item">
+                            <div class="features-section__item-img">
+                                <span class="features-section__item-box">
+                                    <img width="25" height="25" src="image/features-section__icon3.svg" alt="icon">
+                                </span>
+                            </div>
+                            <h3 class="features-section__item-title">Financial Health</h3>
+                            <p class="features-section__item-description">Get funds fast and to your payment method of
+                                choice.</p>
+                        </div>
+    
+                        <div class="features-section__item">
+                            <div class="features-section__item-img">
+                                <span class="features-section__item-box">
+                                    <img width="25" height="25" src="image/features-section__icon4.svg" alt="icon">
+                                </span>
+                            </div>
+                            <h3 class="features-section__item-title">Business Enablement Tools</h3>
+                            <p class="features-section__item-description">Enhance your capabilities with our platform
+                                crafting solutions for you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section__image">
+                    <picture>
+                        <source srcset="image/features-section.webp" type="image/webp">
+                        <img width="480" height="768" src="image/features-section.png" alt="features image"
+                            loading="lazy">
+                    </picture>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- A Smarter Way to Manage Your Business -->
+        <section class="smarter-way">
+            <div class="smarter-way__container">
+                <div class="smarter-way__content">
+                    <h2 class="smarter-way__title">A Smarter Way to Manage Your Business</h2>
+                    <p class="smarter-way__description">Stuff enables you to achieve clarity and significant results on a large scale by linking tasks and workflows to the overarching objectives of the company</p>
+                    <a href="/" class="smarter-way__link">Get Started</a>
+                </div>
+
+                <div class="smarter-way__img">
+                    <picture>
+                        <source srcset="image/smarter-way-bg.webp" type="image/webp">
+                        <img width="1339" height="725" src="image/smarter-way-bg.png"
+                            alt="image" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__box">
+                    <div class="footer__logo">
+                        <a href="/">
+                            <img width="109" height="65" src="image/logo-footer.svg" alt="logo">
+                        </a>
+                        <p>Arti Technologies, LLC 2024</p>
+                    </div>
+                    <div class="footer__cosial">
+                        <p>Follow us on:</p>
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <img width="16" height="17" src="image/footer__cosial1.svg" alt="Linkedin icon">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/">
+                                    <img width="16" height="17" src="image/footer__cosial2.svg" alt="X icon">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/">
+                                    <img width="20" height="21" src="image/footer__cosial3.svg" alt="Youtube icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="footer__nav"> 
+                    <ul class="footer__nav-list footer__nav-list1">
+                        <li class="footer__nav-item footer__nav-item1">
+                            <a href="benefits.html" class="footer__nav-link">Benefits</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Revenue</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Expenses</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Credit</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">See All</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__nav-list footer__nav-list2">
+                        <li class="footer__nav-item footer__nav-item1">
+                            <a href="features.html" class="footer__nav-link">Features</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Credit Monitoring</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Business Capital</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Insights</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Expense Management</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Intelligence</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Forecasting</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__nav-list footer__nav-list3">
+                        <li class="footer__nav-item footer__nav-item1">
+                            <a href="/" class="footer__nav-link">Company</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="about.html" class="footer__nav-link">About</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="careers.html" class="footer__nav-link">Careers</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Partnerships</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="contact.html" class="footer__nav-link">Contact Us</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Changelog</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__nav-list footer__nav-list4">
+                        <li class="footer__nav-item footer__nav-item1">
+                            <a href="/" class="footer__nav-link">Resources</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Help Center</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">FAQ</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Developers & API</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Community</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/" class="footer__nav-link">Status</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__bottom-list">
+                    <li class="footer__bottom-item">
+                        <a href="privacy.html" class="footer__bottom-link">Privacy Policy</a>
+                    </li>
+
+                    <li class="footer__bottom-item">
+                        <a href="/" class="footer__bottom-link">Cookies</a>
+                    </li>
+
+                    <li class="footer__bottom-item">
+                        <a href="/" class="footer__bottom-link">Security</a>
+                    </li>
+
+                    <li class="footer__bottom-item">
+                        <a href="/" class="footer__bottom-link">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Burger Menu -->
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+        <button class="buttonClose">
+            <img width="25" height="25" src="image/close.svg" alt="button close">
+        </button>
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="benefits.html" class="mobile-menu-link">Benefits</a></li>
+                <li class="mobile-menu__item"><a href="features.html" class="mobile-menu-link">Features</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu-link">Company</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu-link">Our Team</a></li>
+                <li class="mobile-menu__item"><a href="careers.html" class="mobile-menu-link">Careers</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu-link">Partners</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeModal">
+                <img width="25" height="25" src="image/close.svg" alt="close">
+            </button>
+
+            <div class="form form--login" id="formLogin">
+                <h2 class="heading-style">Login</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p>Don't have an account? <span class="link" id="goToRegister">Register here</span></p>
+            </div>
+
+            <div class="form form--register" id="formRegister" style="display: none;">
+                <h2 class="heading-style">Register</h2>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+                <p>Already have an account? <span class="link" id="goToLogin">Login here</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/jquery-3.7.0.min.js"></script>
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="script/main.js"></script>
+
+
+</body>
+
+</html>
