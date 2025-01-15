@@ -511,13 +511,73 @@
             </button>
 
             <div class="form form--login" id="formLogin">
-                <h2 class="heading-style">Login</h2>
-                <form>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit" class="btn">Login</button>
-                </form>
-                <p>Don't have an account? <span class="link" id="goToRegister">Register here</span></p>
+                <div class="form--login__left">
+                    <img class="form--login__left-logo" width="136" height="78" src="image/login-icon1.svg" alt="icon logotype">
+
+                    <div class="form--login__left-img">
+                        <picture>
+                            <source srcset="image/login-img.webp" type="image/webp">
+                            <img width="666" height="612" src="image/login-img.png" alt="image">
+                        </picture>
+                    </div>
+                </div>
+                <div class="form--login__right">
+                    <div class="form--login__right-box">
+                        <div class="form--login__right-top">
+                            <div class="form--login__right-top-box">
+                                <h2>Login</h2>
+                                <p>Welcome back!</p>
+                            </div>
+                            <img width="33" height="34" src="image/login-icon2.svg" alt="icon">
+                        </div>
+    
+                        <form>
+                            <div class="input-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="fred@kruger.com" required>
+                                <img width="24" height="25" src="image/email.svg" alt="Email Icon" class="icon">
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="********" required>
+                                <img width="24" height="25" src="image/eye-closed.svg" alt="Toggle Password" class="icon toggle-password" id="togglePassword">
+                            </div>
+                            <button type="submit" class="login-button">
+                                Login <span class="arrow">
+                                    <img width="24" height="25" src="image/arrow-right-long.svg" alt="arrow icon">
+                                </span>
+                            </button>
+                        </form>
+    
+                        <ul class="form--login__right-bottom">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img width="20" height="21" src="image/google-circle.svg" alt="google">
+                                    Google
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img width="20" height="21" src="image/linkedin.svg" alt="linkedin">
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img width="20" height="21" src="image/x.svg" alt="icon">
+                                    Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form--login__right-content">
+                        <p>© 2024 Arti Technologies</p>
+                        <div class="form--login__right-content-link">
+                            <p>Don’t have an account?</p>
+                            <span class="link" id="goToRegister">Sign Up</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="form form--register" id="formRegister" style="display: none;">
