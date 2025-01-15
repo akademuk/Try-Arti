@@ -1456,13 +1456,16 @@ body {
     position: relative;
     max-width: 1480px;
     width: 100%;
+    max-height: 908px;
+    height: 100%;
 }
 
 .form {
     display: flex;
-    max-height: 908px;
-    height: 908px;
     gap: 12px;
+    height: 100%;
+    overflow: auto;
+    border-radius: 32px;
 }
 
 .modal__close {
@@ -1478,6 +1481,8 @@ body {
     display: flex;
     padding-top: 89px;
     width: 666px;
+    min-height: 868px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -1509,6 +1514,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 868px;
+    height: 100%;
     justify-content: center;
     flex: 1 0 0;
     align-self: stretch;
@@ -1560,7 +1567,35 @@ body {
     border-radius: 360px;
     border: 1px solid #D4D4D4;
     background: #FFF;
+    cursor: pointer;
+    color: #1A1C1E;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%; 
+    letter-spacing: -0.35px;
+    transition: all 0.4s;
 } 
+
+.toggle-password {
+    cursor: pointer;
+}
+
+.form--login__right-content-link .link:hover {
+    background:#F1F1ED;
+}
+
+.form--login__right-content-link .link:active {
+    background:#F1F1ED;
+}
+
+.form--register .form--login__left {
+    border-radius: 32px;
+    border: 1px solid #D4D4D4;
+    background: #1A1C1E;
+    box-shadow: -2px 1px 0px 0px #19C5AE inset, 0px 2px 10px 0px rgba(10, 10, 10, 0.16);
+}
 
 .form--login__right-box {
     width: 100%;
@@ -1672,6 +1707,16 @@ body {
     line-height: 150%;
     letter-spacing: -0.4px;
     background: #1A1C1E;
+    border: none;
+    transition: all 0.4s;
+}
+
+.form--login__right-box form button:hover {
+    background: #5A5C5D;
+}
+
+.form--login__right-box form button:active {
+    background: #5A5C5D;
 }
 
 .form--login__right-bottom {
@@ -1700,9 +1745,16 @@ body {
     line-height: 150%; 
     letter-spacing: -0.35px;
     text-decoration: none;
+    transition: all 0.4s;
 }
 
+.form--login__right-bottom li a:hover {
+    background:#F1F1ED;
+}
 
+.form--login__right-bottom li a:active {
+    background:#F1F1ED;
+}
 
 
 
@@ -1860,6 +1912,31 @@ body {
 
     .footer__nav-list {
         width: 25%;
+    }
+
+    .form--login__left {
+        width: 250px;
+    }
+
+    .form--login__left-img {
+        height: 300px;
+    }
+
+    .form--login__right-box {
+        max-width: 375px;
+    }
+
+    .form--login__right {
+        min-height: auto;
+        padding-top: 48px;
+    }
+
+    .form--login__left {
+        min-height: auto;
+    }
+
+    .form--login__right-content p {
+        font-size: 12px;
     }
 }
 
@@ -2181,6 +2258,46 @@ body {
 
     .footer__container {
         padding: 32px 16px;
+    }
+
+    .modal__close {
+        top: 0;
+        right: 0;
+    }
+
+    .form--login__left {
+        display: none;
+    }
+
+    .form--login__right-box {
+        height: 100%;
+    }
+
+    .modal__content {
+        padding: 16px;
+    }
+
+    .form--login__right {
+        padding: 48px 16px 48px 16px;
+    }
+    
+    .form--login__right {
+        max-width: 100%;
+        width: 100%;
+        gap: 32px;
+        height: fit-content;
+    }
+
+    .form--login__right-bottom {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .form--login__right-content {
+        height: auto;
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 16px;
     }
 }
 

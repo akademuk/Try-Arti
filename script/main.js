@@ -93,6 +93,7 @@ function initModalHandlers() {
 
       modal.classList.add("active");
       body.classList.add("modal-open");
+      body.style.overflow = "hidden"; // Блокируем прокрутку
 
       modal.querySelector(".form--login").style.display = type === "login" ? "flex" : "none";
       modal.querySelector(".form--register").style.display = type === "register" ? "flex" : "none";
@@ -103,6 +104,7 @@ function initModalHandlers() {
 
       modal.classList.remove("active");
       body.classList.remove("modal-open");
+      body.style.overflow = ""; // Убираем блокировку прокрутки
     },
     toggle(modalSelector, targetType) {
       const modal = document.querySelector(modalSelector);
@@ -139,6 +141,7 @@ function initModalHandlers() {
   bindModalButtons(modalSelector);
   initModalEvents(modalSelector);
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
